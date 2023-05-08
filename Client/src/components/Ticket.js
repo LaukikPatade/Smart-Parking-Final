@@ -1,13 +1,13 @@
 import React from "react";
 
 import "./tickets.css"
-function Ticket (){
+function Ticket (props){
   return(
     <div style={{display:"flex" }}>
   <div className="widget" type="ticket" style={{display:"flex", flexDirection:"column"}}>
     <div class="top">
       <br/>
-      <div class="tourname"><strong>Parking Space</strong></div>
+      <div class="tourname"><strong>{props.zone}</strong></div>
       <div class="deetz " style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
         <div class="event" style={{display:"flex", flexDirection:"column"}}>
           <div class="date">3rd March 2017</div>
@@ -20,7 +20,7 @@ function Ticket (){
         <div class="price" style={{display:"flex", flexDirection:"column"}}>
           <div class="label">Price :</div>
           <div class="cost -bold">Eth. 0.0001</div>
-          <div class="transaction-id">Transaction ID:</div>
+          <div class="transaction-id">Transaction ID:{props.transactionId}</div>
           
           <div>1234567890 </div>
 

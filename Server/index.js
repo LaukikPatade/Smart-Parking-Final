@@ -117,7 +117,14 @@ app.get("/logout", function (req, res) {
     console.log("logged out");
     res.status(200);
 });
-
+app.post("/updateZone", async(req, res)=>{
+    const {zoneId}=req.body
+    const zone=await Zone.findById(zoneId);
+    zone.remainingParkingSpaces--;
+    await zone.save()
+    console.log("logged out");
+    res.status(204);
+});
 app.post("/createZones",async(req,res)=>{
     await Zone.deleteMany({})
     const parkingSpaces = [

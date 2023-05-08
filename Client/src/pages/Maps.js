@@ -22,7 +22,7 @@ import {ethers} from 'ethers'
 import abi from '../utils/parkingTicket.json'
 export default function Maps(props) {
   const [duration,setDuration]=useState(0);
-  const buy = async (e,zone,zoneOwner,cost) => {
+  const buy = async (e,zone,zoneOwner,cost,zoneId) => {
     try {
       e.preventDefault()
       const { ethereum } = window;
@@ -32,8 +32,11 @@ export default function Maps(props) {
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
         
-        const parkingContract = new ethers.Contract("0x6d11b93CB552a8ec1f2a55b6b83c7A3a645b6341", contractABI, signer);
+        const parkingContract = new ethers.Contract("0xD444E8B68E2E475B9B8f4302CE8EeEBefA8691FF", contractABI, signer);
         await parkingContract.buyTicket(duration,plateNumber,zone,zoneOwner,{ value: ethers.utils.parseEther(cost)})
+        await axios.post('http://localhost:4000/updateZone',{
+        zoneId
+    })
         let count = await parkingContract.getTotalTickets();
         console.log("Retrieved total ticket count...", count.toNumber());
       } else {
@@ -157,7 +160,7 @@ export default function Maps(props) {
             }}
           >
             <div style={{ display:"flex",alignItems:"center", justifyContent:"space-between"}}>
-              <form onSubmit={(e)=>buy(e,selectedPark.name,selectedPark.ownerAddress,(duration*selectedPark.rate).toString())}>
+              <form onSubmit={(e)=>buy(e,selectedPark.name,selectedPark.ownerAddress,(duration*selectedPark.rate).toString(),selectedPark._id)}>
                 <label for="duration">Duration :</label><br/>
                 <input onChange={(e)=>setDuration(e.target.value)} placeholder="Enter the duration for which you want to park" name="duration"  />
                 <h1 style={{fontWeight:"250"}}>{selectedPark.name}</h1>
