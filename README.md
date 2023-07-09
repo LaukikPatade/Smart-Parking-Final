@@ -1,7 +1,7 @@
 # Smart-Parking-Final
-A crypto=solution to your modern day parking problems.
+A crypto-solution to your modern day parking problems.
 
-# Features
+## Features
 Decentralized Parking Space Management: The smart parking system eliminates the need for a centralized authority by leveraging blockchain technology. Parking space ownership, availability, and transactions are recorded on the blockchain, ensuring transparency and integrity.
 
 Real-Time Parking Space Monitoring: The system  monitors parking space occupancy in real-time. Users can access the system through a web application to view available parking spaces and make reservations.
@@ -12,7 +12,7 @@ Smart Contracts: Smart contracts are employed to automate and enforce the rules 
 
 Payment Integration: The system supports various payment methods through metamask. Users can conveniently pay for their parking reservations through the integrated payment system.
 
-# System Architecture
+## System Architecture
 The smart parking system is built using the following technologies and components:
 
 Blockchain Platform: Ethereum - The Ethereum blockchain is used for its smart contract functionality and decentralized nature.
@@ -25,39 +25,54 @@ Back-End: Node.js - The back-end server is built using Node.js, providing a scal
 
 Database: MongoDB - MongoDB is used as the database to store auxiliary information related to parking spaces, user profiles, and vehicle data.
 
-# Getting Started
+## Installation
+
 
 To run the blockchain-based smart parking system locally, follow these steps:
 
 1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/blockchain-smart-parking.git
+```
 
 2. Install the necessary dependencies for the front-end and back-end:
+
+```bash
 cd blockchain-smart-parking
 cd frontend
 npm install
 
 cd ../backend
 npm install
+```
 
-# You are good to go!
+## You are good to go!
 
 3. Run the application
 Start the front-end development server:
+
+```bash
 cd frontend
 npm start
+```
 
 Start the back-end server:
+```bash
 cd backend
 npm start
+```
 
 4. Open your web browser and visit https://localhost:3000
 
-# Contact
-For any inquiries or questions, please contact any of the follwing:
-laukikpatade22@gmail.com
-ryrane.in@gmail.com
-kadamalisha2002@gmail.com
+## Contact
+For any inquiries or questions, please contact any of the following:
+
+-laukikpatade22@gmail.com
+
+-ryrane.in@gmail.com
+
+-kadamalisha2002@gmail.com
 
 Enjoy using the blockchain-based smart parking system!
 
