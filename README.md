@@ -11,3 +11,65 @@ Secure and Immutable Transactions: All parking space transactions, including res
 Smart Contracts: Smart contracts are employed to automate and enforce the rules and conditions of parking space reservations and payments. The smart contracts execute autonomously, eliminating the need for intermediaries and reducing the risk of human error or fraud.
 
 Payment Integration: The system supports various payment methods through metamask. Users can conveniently pay for their parking reservations through the integrated payment system.
+
+# System Architecture
+The smart parking system is built using the following technologies and components:
+
+Blockchain Platform: Ethereum - The Ethereum blockchain is used for its smart contract functionality and decentralized nature.
+
+Smart Contracts: Solidity - Solidity is the programming language used to develop the smart contracts that govern parking space transactions.
+
+Front-End: React - The user interface is developed using the React JavaScript framework, providing a responsive and intuitive interface for users.
+
+Back-End: Node.js - The back-end server is built using Node.js, providing a scalable and efficient server-side infrastructure.
+
+Database: MongoDB - MongoDB is used as the database to store auxiliary information related to parking spaces, user profiles, and vehicle data.
+
+# Getting Started
+
+To run the blockchain-based smart parking system locally, follow these steps:
+
+1. Clone the repository:
+git clone https://github.com/your-username/blockchain-smart-parking.git
+
+2. Install the necessary dependencies for the front-end and back-end:
+cd blockchain-smart-parking
+cd frontend
+npm install
+
+cd ../backend
+npm install
+
+# You are good to go!
+
+3. Run the application
+Start the front-end development server:
+cd frontend
+npm start
+
+Start the back-end server:
+cd backend
+npm start
+
+4. Open your web browser and visit https://localhost:3000
+
+# Contact
+For any inquiries or questions, please contact any of the follwing:
+laukikpatade22@gmail.com
+ryrane.in@gmail.com
+kadamalisha2002@gmail.com
+
+Enjoy using the blockchain-based smart parking system!
+
+
+
+
+
+
+
+
+
+
+
+
+
