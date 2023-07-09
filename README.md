@@ -39,11 +39,10 @@ git clone https://github.com/LaukikPatade/Smart-Parking-Final.git
 2. Install the necessary dependencies for the front-end and back-end:
 
 ```bash
-cd blockchain-smart-parking
-cd frontend
+cd client
 npm install
 
-cd ../backend
+cd ../server
 npm install
 ```
 
@@ -53,14 +52,14 @@ npm install
 Start the front-end development server:
 
 ```bash
-cd frontend
+cd client
 npm start
 ```
 
 Start the back-end server:
 ```bash
 cd backend
-npm start
+nodemon index.js
 ```
 
 4. Open your web browser and visit https://localhost:3000
