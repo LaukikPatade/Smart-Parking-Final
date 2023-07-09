@@ -39,10 +39,10 @@ git clone https://github.com/LaukikPatade/Smart-Parking-Final.git
 2. Install the necessary dependencies for the front-end and back-end:
 
 ```bash
-cd client
+cd Client
 npm install
 
-cd ../server
+cd ../Server
 npm install
 ```
 
@@ -52,13 +52,13 @@ npm install
 Start the front-end development server:
 
 ```bash
-cd client
+cd Client
 npm start
 ```
 
 Start the back-end server:
 ```bash
-cd backend
+cd Server
 nodemon index.js
 ```
 
