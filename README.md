@@ -1,4 +1,4 @@
-# Smart-Parking-Final
+# Blockchain-Based Smart Parking System
 A crypto-solution to your modern day parking problems.
 
 ## Features
