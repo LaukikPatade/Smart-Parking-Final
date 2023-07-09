@@ -33,7 +33,7 @@ To run the blockchain-based smart parking system locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/blockchain-smart-parking.git
+git clone https://github.com/LaukikPatade/Smart-Parking-Final.git
 ```
 
 2. Install the necessary dependencies for the front-end and back-end:
